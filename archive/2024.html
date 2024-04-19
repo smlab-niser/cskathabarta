@@ -44,17 +44,37 @@
                         University</em>
                     <ul>
                         <li>Date: Apr 18, 2024, 09:30 hours</li>
-                        <li>Title: TBA</li>
+                        <li>Title: From explainable NLP to quantum dynamics prediction: A two-way synergy between many-body quantum physics and temporal machine learning models</li>
                         <li>
                             <details>
                                 <summary>Abstract</summary>
-                                <p> TBA </p>
+                                <p> In this talk, we will discuss our recent work that highlights the fruitful interplay
+                                    between many-body quantum physics and temporal machine learning models. The first
+                                    part, "Quantum Meets Language," employs techniques from many-body quantum physics to
+                                    enhance explainability in the common natural language processing task of sentiment
+                                    analysis. We will examine how transforming a recurrent neural network model into its
+                                    matrix product states counterpart can inform design principles and facilitate
+                                    interpretable predictions in machine learning models for sentiment analysis [1]. The
+                                    second part, "Forecasting Many-Body Quantum Dynamics with Machine Learning," delves
+                                    into our data-driven approach that uses a variant of reservoir computing to
+                                    accurately predict complex quantum many-body dynamics far into the future,
+                                    circumventing the need for computing intermediate time steps that typically slow
+                                    down classical simulations of such dynamics [2]. These findings not only demonstrate
+                                    the capabilities of GPUs in advancing scientific research but also underscore the
+                                    potential of these interdisciplinary approaches to research in AI, materials
+                                    science, and quantum simulation. 
+                                    
+                                    References:
+                                    [1] J. Tangpanitanon et al, Explainable Natural Language Processing with Matrix Product States, New Journal of Physics, 24 053032, 2022   
+                                    [2] A. Sornsaeng et al, Quantum Next Generation Reservoir Computing: An Efficient Quantum Algorithm for Predicting Quantum Dynamics  
+https://doi.org/10.48550/arXiv.2308.14239
+                                    </p>
                             </details>
                         </li>
                     </ul>
                 </small>
             </li>
-            
+
 
             <!-- <li><strong>Dr. Saket Anand</strong>
                 <small>
@@ -80,8 +100,29 @@
                         <li>
                             <details>
                                 <summary>Abstract</summary>
-                                <p> Deep neural networks trained on biased data often inadvertently learn unintended inference rules, particularly when labels are strongly correlated with biased features. While several approaches have been proposed, one view towards mitigating bias is through adversarial learning. The main drawback of the adversarial method is that it directly introduces a tradeoff with accuracy, as the features that the discriminator deems to be sensitive to discrimination or bias could be correlated with classification. In our work we show that a biased discriminator can actually be used to improve this bias-accuracy tradeoff. Specifically, this is achieved by using a feature masking approach using the discriminator's gradients. We ensure that the features favored for the bias discrimination are de-emphasized and the unbiased features are enhanced during classification.
-                                    One issue with these methods is that they address bias indirectly in the feature or sample space, with no control over learned weights, making it difficult to control the bias propagation across different layers. Based on this observation, we introduce a novel approach to address bias directly in the model's parameter space, preventing its propagation across layers. Our method involves training two models: a bias model for biased features and a debias model for unbiased details, guided by the bias model. We enforce dissimilarity in the debias model's later layers and similarity in its initial layers with the bias model, ensuring it learns unbiased low-level features without adopting biased high-level abstractions. By incorporating this explicit constraint during training, our approach shows enhanced classification accuracy and debiasing effectiveness across various synthetic and real-world datasets of different sizes. </p>
+                                <p> Deep neural networks trained on biased data often inadvertently learn unintended
+                                    inference rules, particularly when labels are strongly correlated with biased
+                                    features. While several approaches have been proposed, one view towards mitigating
+                                    bias is through adversarial learning. The main drawback of the adversarial method is
+                                    that it directly introduces a tradeoff with accuracy, as the features that the
+                                    discriminator deems to be sensitive to discrimination or bias could be correlated
+                                    with classification. In our work we show that a biased discriminator can actually be
+                                    used to improve this bias-accuracy tradeoff. Specifically, this is achieved by using
+                                    a feature masking approach using the discriminator's gradients. We ensure that the
+                                    features favored for the bias discrimination are de-emphasized and the unbiased
+                                    features are enhanced during classification.
+                                    One issue with these methods is that they address bias indirectly in the feature or
+                                    sample space, with no control over learned weights, making it difficult to control
+                                    the bias propagation across different layers. Based on this observation, we
+                                    introduce a novel approach to address bias directly in the model's parameter space,
+                                    preventing its propagation across layers. Our method involves training two models: a
+                                    bias model for biased features and a debias model for unbiased details, guided by
+                                    the bias model. We enforce dissimilarity in the debias model's later layers and
+                                    similarity in its initial layers with the bias model, ensuring it learns unbiased
+                                    low-level features without adopting biased high-level abstractions. By incorporating
+                                    this explicit constraint during training, our approach shows enhanced classification
+                                    accuracy and debiasing effectiveness across various synthetic and real-world
+                                    datasets of different sizes. </p>
                             </details>
                         </li>
                     </ul>
@@ -92,11 +133,11 @@
                     <em> Assistant Professor, CSE IIIT Delhi</em>
                     <ul>
                         <li>Date: April 19, 2024, 14:30 hours</li>
-                        <li>Title: TBA</li>
+                        <li>Title: Applications of Symbolic and Neuro-Symbolic AI</li>
                         <li>
                             <details>
                                 <summary>Abstract</summary>
-                                <p> TBA </p>
+                                <p> Heterogeneous data from different sources are often related to each other. In order to derive value, the data should be integrated, structured, and the relationships should be made explicit. Knowledge Graphs (KG) can play a key role in achieving these goals. In the first part of the talk, after briefly introducing Knowledge Graphs and Ontologies, I will discuss two use cases that make use of KGs. In the second part of the talk, I will discuss the advantages of combining the neural and the symbolic aspects of AI through two use cases. </p>
                             </details>
                         </li>
                     </ul>
@@ -255,7 +296,10 @@
                                     and (ii) explain the reason for the decisions they take. Such vulnerable points
                                     automatically constitute ‘jailbreak’ prompts for these models and industry scale
                                     safeguard techniques need to be developed to make the models robust against such
-                                    prompts. </p>
+                                    prompts. 
+                                
+                                    </p>
+                                   
                             </details>
                         </li>
                     </ul>
