@@ -1,289 +1,400 @@
 <!doctype html>
-<html lang="en" class="h-100">
+<html lang="en" data-bs-theme="light">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="CS Katha Barta">
-    <meta name="author" content="Rucha">
-    <title>CS Karta Barta | Subhankar Mishra's Lab</title>
-    <link href="https://www.niser.ac.in/~smishra/css/smlab.css" rel="stylesheet" type="text/css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CS KathaBarta 2025 Archive</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    item {
+    position: -webkit-sticky;
+    position: sticky;
+}
+  </style>
 </head>
 
 <body>
+
+  <!-- <header class="bg-dark text-white p-3"> -->
+  <header class="p-3">
     <div class="container">
-        <header class="item">
-            <h1>CS Katha Barta | ସଂଗଣକ ବିଜ୍ଞାନ କଥା ବାର୍ତା</h1>
-        </header>
-        Hosted by <a href="https://www.niser.ac.in/~smishra/"> Subhankar Mishra's Lab</a> <br>
-        People -> Rucha Bhalchandra Joshi, Subhankar Mishra
-        <hr />
-        <h3>CS Katha Barta 2025</h3>
+      <h1 class="display-5">CS KathaBarta | ସଂଗଣକ ବିଜ୍ଞାନ କଥା ବାର୍ତା</h1>
+      <p class="lead"> Hosted by <a href="https://ruchajoshi.github.io">Rucha Bhalchandra Joshi</a> and <a
+          href="https://www.niser.ac.in/~smishra/">Subhankar Mishra</a></p>
+    </div>
+  </header>
 
-        <!-- <iframe src="https://calendar.google.com/calendar/embed?src=cskathabarta%40niser.ac.in&ctz=Asia%2FKolkata" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
+  <main>
 
-        <h4>Upcoming Talks</h4>
-        <ol>
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2>Upcoming Talks</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
 
-            <li><strong>Dr. Abhishek Singh</strong>
-                <small>
-                    <em> Accenture </em>
-                    <ul>
-                        <li>Date: April 11 2025, 11:00 hours IST
-                            <a target="_blank"
-                                href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=N3VocGJmN2hhdHRuZHRpNm1jYzcyamNnMmogY3NrYXRoYWJhcnRhQG5pc2VyLmFjLmlu&amp;tmsrc=cskathabarta%40niser.ac.in"><img
-                                    border="0" src="https://calendar.google.com/calendar/images/ext/gc_button1_en.gif"
-                                    alt="Google Calendar"></a>
-                        </li>
-                        <li>Title: Multi-Agent Retrieval-Augmented Generation (RAG): A Collaborative AI Framework for
-                            Enhanced Information Processing</li>
-                        <li>
-                            <details>
-                                <summary>Abstract</summary>
-                                <p> Multi-Agent Retrieval-Augmented Generation (RAG) enhances AI-driven reasoning by
-                                    combining specialized agents for retrieval, analysis, and content generation. This
-                                    collaborative approach improves accuracy, minimizes hallucinations, and scales
-                                    efficiently across applications like research assistants, legal analysis, and
-                                    customer support.
+          <!-- Talk Card Example -->
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Structured Pruning of Neural Networks without Access to Training Data</h5>
+                <p class="card-text mb-2">
+                  <strong>Speaker:</strong> Tanay Narshana<br>
+                  <strong>Affiliation:</strong> Google<br>
+                  <strong>Date:</strong> April 25, 2025
+                </p>
+                <a class="btn btn-sm btn-outline-info mb-2" data-bs-toggle="collapse" href="#abstract-tanay"
+                  role="button" aria-expanded="false" aria-controls="abstract-tanay">
+                  Show Abstract
+                </a>
+                <div class="collapse" id="abstract-tanay">
+                  <div class="card card-body mb-2">
+                    Deep Learning models have now become ubiquitous. However, the hardware requirements to deploy SoTA
+                    models are increasing faster than Moore's law can deliver. Model compression, particularly pruning,
+                    is one way to alleviate this problem. This talk explores challenges with pruning in multi-branch
+                    architectures and how coupled channels (CCs) impact inference time. It also focuses on pruning
+                    without access to training data, a growing necessity due to privacy and computational constraints.
+                  </div>
+                </div>
 
-                                    This talk explores multi-agent RAG’s architecture, benefits over single-agent
-                                    models, and key challenges, including agent coordination and retrieval bias. We
-                                    discuss optimization strategies, reinforcement learning for self-improvement, and
-                                    future research directions. Multi-agent RAG represents the next step in intelligent,
-                                    fact-based AI reasoning, bridging structured retrieval with advanced generative
-                                    capabilities.</p>
-                            </details>
-                        </li>
-                    </ul>
-                </small>
-            </li>
+                <div class="mt-auto d-flex justify-content-between align-items-end">
+                  <div>
+                    <button class="btn btn-sm btn-outline-secondary" disabled>Slides</button>
+                    <button class="btn btn-sm btn-outline-secondary" disabled>Video</button>
+                    <!-- <a href="#" class="btn btn-sm btn-outline-primary me-1">Slides</a>
+                    <a href="#" class="btn btn-sm btn-outline-secondary">Video</a> -->
+                  </div>
+                  <div><!-- Add buttons for slides/video if available --></div>
+                  <small class="text-muted">Time: 02:00pm</small>
+                </div>
+              </div>
+            </div>
+          </div>
 
-            <li><strong>Tanay Narshana</strong>
-                <small>
-                    <em> Google </em>
-                    <ul>
-                        <li>Date: April 25 2025,</li>
-                        <li>Title: TBA</li>
-                        <li>
-                            <details>
-                                <summary>Abstract</summary>
-                                <p> TBA</p>
-                            </details>
-                        </li>
-                    </ul>
-                </small>
-            </li>
-
-            <li><strong>Dr. Jibesh Patra</strong>
-                <small>
-                    <em>Assistant Professor, IIT Kharagpur </em>
-                    <ul>
-                        <li>Date: August 22 2025,</li>
-                        <li>Title: TBA</li>
-                        <li>
-                            <details>
-                                <summary>Abstract</summary>
-                                <p> TBA</p>
-                            </details>
-                        </li>
-                    </ul>
-                </small>
-            </li>
-
-        </ol>
-        <h4>Past Talks</h4>
-        <ol reversed>
-            <li><strong>Dr. Rucha Deshpande</strong>
-                <small>
-                    <em>Research Affiliate, University of Illinois Urbana-Champaign</em>
-                    <ul>
-                        <li>Date: April 04 2025, 16:00 hors IST
-                            <a target="_blank"
-                                href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=MzJhdTE2YWFpYWxrYzN2Z2l2b2lhaWNxazAgc21pc2hyYUBuaXNlci5hYy5pbg&amp;tmsrc=smishra%40niser.ac.in"><img
-                                    border="0" src="https://calendar.google.com/calendar/images/ext/gc_button1_en.gif"
-                                    alt="Google Calendar"></a>
-                        </li>
-                        <li>Title: Multi-stage evaluation of generative models in biomedical imaging <a
-                                href="25slides/RuchaDeshpande_Datasets.pdf">Datasets</a></li>
-                        <li>
-                            <details>
-                                <summary>Abstract</summary>
-                                <p> Generative models have the potential to revolutionize biomedical imaging. However,
-                                    in this mission-critical domain, the evaluation of generative models is imperative
-                                    to ensure patient safety. Designing evaluation frameworks for generative models is
-                                    essential at different stages in the biomedical-tool development process. In this
-                                    talk, I will focus on generative models of images for data augmentation
-                                    applications. I will discuss the limitations of some existing approaches and present
-                                    some of my work on (i) rule-out tests, (ii) in-silico testing and (iii) post-hoc
-                                    testing for clinical datasets.
-                                </p>
-                            </details>
-                        </li>
-                    </ul>
-                </small>
-            </li>
-            <li><strong><a href="https://pwelke.de">Dr. Pascal Welke</a></strong>
-                <small>
-                    <em>Assistant Professor for Data Science, Lancaster University
-                        , Leipzig </em>
-                    <ul>
-                        <li>Date: March 21 2025, 14:30 hours IST</li>
-                        <li>Title: Expressive Graph Embeddings via Homomorphism Counts
-                            <a href="https://youtu.be/fyAr-AHgYO0">Youtube</a>
-                            <a href="25slides/CSKathaBartha_pascal.pdf">Slides</a>
-                        </li>
-                        <li>
-                            <details>
-                                <summary>Abstract</summary>
-                                <p> I will give a high-level overview of graph representation
-                                    learning that uses homomorphism counting in one way or the
-                                    other. Homomorphism counting is a way to measure 'how often' a
-                                    given pattern appears in a graph. In the context of (message
-                                    passing) graph neural networks (GNNs), homomorphism counting is
-                                    mainly used in two areas: (1) Quantifying what GNNs can do and
-                                    where they fail and (2) improving the capabilities of GNNs.
-                                    Special interest in both these areas lies on the expressivity of
-                                    GNNs, i.e., their ability to learn different representations for
-                                    nonisomorphic graphs. I will present and discuss the basics, as
-                                    well as recent results in this interesting and active area of
-                                    research.</p>
-                            </details>
-                        </li>
-                        <iframe width="280" height="157"
-                            src="https://www.youtube.com/embed/fyAr-AHgYO0?si=7UKvJt0yRdzJw2m-"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </ul>
-                </small>
-            </li>
-            <li><strong><a href="https://www.cse.iitd.ac.in/~sayan/">Dr. Sayan Ranu</a></strong>
-                <small>
-                    <em>IIT Delhi </em>
-                    <ul>
-                        <li>Date: March 21 2025, 11:00 hours IST</li>
-                        <li>Title: GraphTrail: Translating GNN Predictions into Human-Interpretable Logical Rules
-                            <a href="https://youtu.be/DcePgb0TlsE">Youtube</a>
-                        </li>
-                        <li>
-                            <details>
-                                <summary>Abstract</summary>
-                                <p> Instance-level explanation of graph neural networks (GNNs) is a well-studied area.
-                                    These explainers, however, only explain an instance (e.g., a graph) and fail to
-                                    uncover the combinatorial reasoning learned by a GNN from the training data towards
-                                    making its predictions. In this work, we introduce GraphTrail, the first end-to-end,
-                                    global, post-hoc GNN explainer that translates the functioning of a black-box GNN
-                                    model to a boolean formula over the (sub)graph level concepts without relying on
-                                    local explainers. GraphTrail is unique in automatically mining the discriminative
-                                    subgraph-level concepts using Shapley values. Subsequently, the GNN predictions are
-                                    mapped to a human-interpretable boolean formula over these concepts through symbolic
-                                    regression. Extensive experiments across diverse datasets and GNN architectures
-                                    demonstrate significant improvement over existing global explainers in mapping GNN
-                                    predictions to faithful logical formulae. The robust and accurate performance of
-                                    GraphTrail makes it invaluable for improving GNNs and facilitates adoption in
-                                    domains with strict transparency requirements.
-                                </p>
-                                <p>
-                                    Reference : Armgaan, Burouj, Manthan Dalmia, Sourav Medya, and Sayan Ranu.
-                                    "GraphTrail: Translating GNN predictions into human-interpretable logical rules."
-                                    Advances in Neural Information Processing Systems 37 (2024): 123443-123470.
-                                </p>
-                            </details>
-                        </li>
-                        <iframe width="280" height="157"
-                            src="https://www.youtube.com/embed/DcePgb0TlsE?si=YDRqlNobA33wYSGd"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </ul>
-                </small>
-            </li>
-            <li><strong>Dr. Struan Robertson</strong>
-                <small>
-                    <em> Biovia R&D Scientific Application Director, BIOVIA Materials Studio, DS Solutions Lab Private
-                        Ltd. </em>
-                    <ul>
-                        <li>Date: January 17 2025, 15:00 hours </li>
-                        <li>Title: Materials Modelling at Dassault Systèmes BIOVIA</li>
-                        <li>
-                            <details>
-                                <summary>Abstract</summary>
-                                <p> The Materials Simulation team of BIOVIA has been engaged in the development of
-                                    electronic and molecular simulation applications for over three decades. At the
-                                    centre of this activity is the notion of multi-scale physics. An overview of three
-                                    contemporary areas of interest spanning a number of scales will be discussed: the
-                                    development of machine learnt potentials, in conjunction with the University of
-                                    Cambridge1, for use in molecular dynamics simulations, the application of mesoscale
-                                    methods to the simulation and understanding of lipid bilayer and liposome formation2
-                                    and the extension of the molecular dynamics method to granular dynamics3 with an
-                                    application to battery electrode structure analysis.
-                                <ol>
-                                    <li>Batatia, I. et al "MACE: Higher Order Equivariant Message Passing Neural
-                                        Networks for Fast and Accurate Force Fields", Advances in Neural Information
-                                        Processing Systems, 11423-11436 (2023).</li>
-                                    <li><a
-                                            href="https://blog.3ds.com/brands/biovia/development-of-innovative-drugs-using-materials-studio/">Development
-                                            of Innovative Drugs Using Materials Studio</a></li>
-                                    <li>Jing Bi et al “Multiscale modeling for the science and engineering of materials”
-                                        International Journal for Multiscale Computational Engineering, 19, 1-80 (2021).
-                                    </li>
-                                </ol>
-
-                                </p>
-                            </details>
-                        </li>
-                    </ul>
-                </small>
-            </li>
-            <li><strong>Dr. Sambeet Mishra</strong>
-                <small>
-                    <em> University of South-Eastern Norway </em>
-                    <ul>
-                        <li>Date: January 03 2025, 14:00 hours</li>
-                        <li>Title: Electricity market operation in Nordics – An overview</li>
-                        <li>
-                            <details>
-                                <summary>Abstract</summary>
-                                <p> Electricity markets and their associated operational structures play a pivotal role
-                                    in ensuring a secure, reliable, and economically efficient energy supply. By
-                                    facilitating competition among diverse power producers - from conventional
-                                    fossil-fuel generators to renewable energy sources - electricity markets promote
-                                    transparency in pricing and stimulate innovation. Key market mechanisms, such as
-                                    day-ahead auctions and intraday trading, help align generation with demand,
-                                    encouraging optimal resource allocation and minimizing imbalances in real time.On an
-                                    operational level, Transmission System Operators (TSOs) oversee grid reliability
-                                    through balancing markets and ancillary services, ensuring electricity flows
-                                    reliably across interconnected networks. These operators deploy mechanisms like
-                                    reserve capacity activation and frequency control to stabilize the system whenever
-                                    unexpected deviations in supply or demand occur. Furthermore, the integration of
-                                    distributed energy resources and the rise of prosumers introduce new complexity and
-                                    opportunities, including peer-to-peer trading and localized market initiatives.
-                                    Overall, the interplay between electricity market design and operational frameworks
-                                    underpins the modern power sector’s resilience, adaptability, and efficiency. By
-                                    continuously refining these market structures and coordinating operations across
-                                    borders and jurisdictions, stakeholders can foster a robust and sustainable energy
-                                    ecosystem that meets evolving societal needs.</p>
-                            </details>
-                        </li>
-                    </ul>
-                </small>
-            </li>
-        </ol>
-        <hr />
-        <h3><a href="https://www.niser.ac.in/~smishra/event/cskathabarta/">CS Katha Barta</a> Past years</h3>
-        <ul>
-            <li><a href="https://www.niser.ac.in/~smishra/event/cskathabarta/archive/2024.html">2024</a></li>
-            <li><a href="https://www.niser.ac.in/~smishra/event/cskathabarta/archive/2023.html">2023</a></li>
-            <li><a href="https://www.niser.ac.in/~smishra/event/cskathabarta/archive/2022.html">2022</a></li>
-            <li><a href="https://www.niser.ac.in/~smishra/event/cskathabarta/archive/2021.html">2021</a></li>
-        </ul>
-        <hr />
-        <br> <br>
-        <div class="navbar">
-            <a href="https://www.niser.ac.in/~smishra/index.html">Home</a>
-            <a href="https://www.niser.ac.in/~smishra/people.html">People</a>
-            <a href="https://www.niser.ac.in/~smishra/research.html">Research</a>
-            <a href="https://www.niser.ac.in/~smishra/teaching.html">Teaching</a>
-            <a href="https://www.niser.ac.in/~smishra/events.html" class="active">Events</a>
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">TBA</h5>
+                <p class="card-text mb-2">
+                  <strong>Speaker:</strong> Dr. Jibesh Patra<br>
+                  <strong>Affiliation:</strong> Assistant Professor, IIT Kharagpur<br>
+                  <strong>Date:</strong> August 22, 2025
+                </p>
+                <a class="btn btn-sm btn-outline-info mb-2" data-bs-toggle="collapse" href="#abstract-jibesh"
+                  role="button" aria-expanded="false" aria-controls="abstract-jibesh">
+                  Show Abstract
+                </a>
+                <div class="collapse" id="abstract-jibesh">
+                  <div class="card card-body mb-2">
+                    TBA
+                  </div>
+                </div>
+                <div class="mt-auto d-flex justify-content-between align-items-end">
+                  <div>
+                    <button class="btn btn-sm btn-outline-secondary" disabled>Slides</button>
+                    <button class="btn btn-sm btn-outline-secondary" disabled>Video</button>
+                  </div>
+                  <small class="text-muted">Time: TBD</small>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="container">
+        <br>
+        <h2>Past Talks</h2>
+        <!-- Repeat the above "col" block for each talk -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Multi-Agent Retrieval-Augmented Generation (RAG) 
+                  <!-- : A Collaborative AI Framework for Enhanced Information Processing -->
+                </h5>
+                <p class="card-text mb-2">
+                  <strong>Speaker:</strong> Dr. Abhishek Singh<br>
+                  <strong>Affiliation:</strong> Accenture<br>
+                  <strong>Date:</strong> April 11, 2025
+                </p>
+                <a class="btn btn-sm btn-outline-info mb-2" data-bs-toggle="collapse" href="#abstract-abhishek"
+                  role="button" aria-expanded="false" aria-controls="abstract-abhishek">
+                  Show Abstract
+                </a>
+                <div class="collapse" id="abstract-abhishek">
+                  <div class="card card-body mb-2">
+                    Multi-Agent Retrieval-Augmented Generation (RAG) enhances AI-driven reasoning by combining
+                    specialized agents for retrieval, analysis, and content generation. This
+                    collaborative approach improves accuracy, minimizes hallucinations, and scales
+                    efficiently across applications like research assistants, legal analysis, and
+                    customer support.
+
+                    This talk explores multi-agent RAG’s architecture, benefits over single-agent
+                    models, and key challenges, including agent coordination and retrieval bias. We
+                    discuss optimization strategies, reinforcement learning for self-improvement, and
+                    future research directions. Multi-agent RAG represents the next step in intelligent,
+                    fact-based AI reasoning, bridging structured retrieval with advanced generative
+                    capabilities.
+                  </div>
+                </div>
+                <div class="mt-auto d-flex justify-content-between align-items-end">
+                  <div>
+                    <button class="btn btn-sm btn-outline-secondary" disabled>Slides</button>
+                    <a href="https://www.youtube.com/watch?v=u3zfFOPaqW0" class="btn btn-sm btn-outline-primary">Video</a>
+                  </div>
+                  <small class="text-muted">Time: 11:00am</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Multi-stage Evaluation of Generative Models in Biomedical Imaging</h5>
+                <p class="card-text mb-2">
+                  <strong>Speaker:</strong> Dr. Rucha Deshpande<br>
+                  <strong>Affiliation:</strong> Research Affiliate, University of Illinois Urbana-Champaign<br>
+                  <strong>Date:</strong> April 04, 2025
+                </p>
+                <a class="btn btn-sm btn-outline-info mb-2" data-bs-toggle="collapse" href="#abstract-rucha"
+                  role="button" aria-expanded="false" aria-controls="abstract-rucha">
+                  Show Abstract
+                </a>
+                <div class="collapse" id="abstract-rucha">
+                  <div class="card card-body mb-2">
+                    Generative models have the potential to revolutionize biomedical
+                    imaging. However, in this mission-critical domain, the evaluation of generative models is imperative
+                    to ensure patient safety. Designing evaluation frameworks for generative models is
+                    essential at different stages in the biomedical-tool development process. In this
+                    talk, I will focus on generative models of images for data augmentation
+                    applications. I will discuss the limitations of some existing approaches and present
+                    some of my work on (i) rule-out tests, (ii) in-silico testing and (iii) post-hoc
+                    testing for clinical datasets.
+                  </div>
+                </div>
+                <div class="mt-auto d-flex justify-content-between align-items-end">
+                  <div>
+
+                    <a href="25slides/RuchaDeshpande_Datasets.pdf" class="btn btn-sm btn-outline-primary me-1">Slides</a>
+                    <button class="btn btn-sm btn-outline-secondary" disabled>Video</button>
+                  </div>
+                  <small class="text-muted">Time: 04:00pm</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Expressive Graph Embeddings via Homomorphism Counts</h5>
+                <p class="card-text mb-2">
+                  <strong>Speaker:</strong> Dr. Pascal Welke<br>
+                  <strong>Affiliation:</strong> Assistant Professor for Data Science, Lancaster University, Leipzig<br>
+                  <strong>Date:</strong> March 21, 2025
+                </p>
+                <a class="btn btn-sm btn-outline-info mb-2" data-bs-toggle="collapse" href="#abstract-pascal"
+                  role="button" aria-expanded="false" aria-controls="abstract-pascal">
+                  Show Abstract
+                </a>
+                <div class="collapse" id="abstract-pascal">
+                  <div class="card card-body mb-2">
+                    I will give a high-level overview of graph representation
+                    learning that uses homomorphism counting in one way or the
+                    other. Homomorphism counting is a way to measure 'how often' a
+                    given pattern appears in a graph. In the context of (message
+                    passing) graph neural networks (GNNs), homomorphism counting is
+                    mainly used in two areas: (1) Quantifying what GNNs can do and
+                    where they fail and (2) improving the capabilities of GNNs.
+                    Special interest in both these areas lies on the expressivity of
+                    GNNs, i.e., their ability to learn different representations for
+                    nonisomorphic graphs. I will present and discuss the basics, as
+                    well as recent results in this interesting and active area of
+                    research.
+                  </div>
+                </div>
+                <div class="mt-auto d-flex justify-content-between align-items-end">
+                  <div>
+                    <a href="25slides/CSKathaBartha_pascal.pdf" class="btn btn-sm btn-outline-primary">Slides</a>
+                    <a href="https://www.youtube.com/watch?v=fyAr-AHgYO0" class="btn btn-sm btn-outline-primary">Video</a>
+                  </div>
+                  <small class="text-muted">Time: 02:30pm</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">GraphTrail: Translating GNN Predictions into Human-Interpretable Logical Rules
+                </h5>
+                <p class="card-text mb-2">
+                  <strong>Speaker:</strong> Dr. Sayan Ranu<br>
+                  <strong>Affiliation:</strong> IIT Delhi<br>
+                  <strong>Date:</strong> March 21, 2025
+                </p>
+                <a class="btn btn-sm btn-outline-info mb-2" data-bs-toggle="collapse" href="#abstract-sayan"
+                  role="button" aria-expanded="false" aria-controls="abstract-sayan">
+                  Show Abstract
+                </a>
+                <div class="collapse" id="abstract-sayan">
+                  <div class="card card-body mb-2">
+                    Instance-level explanation of graph neural networks (GNNs) is a
+                    well-studied area.
+                    These explainers, however, only explain an instance (e.g., a graph) and fail to
+                    uncover the combinatorial reasoning learned by a GNN from the training data towards
+                    making its predictions. In this work, we introduce GraphTrail, the first end-to-end,
+                    global, post-hoc GNN explainer that translates the functioning of a black-box GNN
+                    model to a boolean formula over the (sub)graph level concepts without relying on
+                    local explainers. GraphTrail is unique in automatically mining the discriminative
+                    subgraph-level concepts using Shapley values. Subsequently, the GNN predictions are
+                    mapped to a human-interpretable boolean formula over these concepts through symbolic
+                    regression. Extensive experiments across diverse datasets and GNN architectures
+                    demonstrate significant improvement over existing global explainers in mapping GNN
+                    predictions to faithful logical formulae. The robust and accurate performance of
+                    GraphTrail makes it invaluable for improving GNNs and facilitates adoption in
+                    domains with strict transparency requirements.
+                    <p>Reference : Armgaan, Burouj, Manthan Dalmia, Sourav Medya, and Sayan Ranu.
+                      "GraphTrail: Translating GNN predictions into human-interpretable logical rules."
+                      Advances in Neural Information Processing Systems 37 (2024): 123443-123470.</p>
+                  </div>
+                </div>
+                <div class="mt-auto d-flex justify-content-between align-items-end">
+                  <div>
+                    <button class="btn btn-sm btn-outline-secondary" disabled>Slides</button>
+                    <a href="https://www.youtube.com/watch?v=DcePgb0TlsE" class="btn btn-sm btn-outline-primary">Video</a>
+                  </div>
+                  <small class="text-muted">Time: 11:00am</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Materials Modelling at Dassault Systèmes BIOVIA</h5>
+                <p class="card-text mb-2">
+                  <strong>Speaker:</strong> Dr. Struan Robertson<br>
+                  <strong>Affiliation:</strong> Biovia R&D Scientific Application
+                  <!-- Director, BIOVIA Materials Studio, DS Solutions Lab Private Ltd. -->
+                  <br>
+                  <strong>Date:</strong> January 17, 2025
+                </p>
+                <a class="btn btn-sm btn-outline-info mb-2" data-bs-toggle="collapse" href="#abstract-struan"
+                  role="button" aria-expanded="false" aria-controls="abstract-struan">
+                  Show Abstract
+                </a>
+                <div class="collapse" id="abstract-struan">
+                  <div class="card card-body mb-2">
+                    The Materials Simulation team of BIOVIA has been engaged in the development of
+                    electronic and molecular simulation applications for over three decades. At the
+                    centre of this activity is the notion of multi-scale physics. An overview of three
+                    contemporary areas of interest spanning a number of scales will be discussed: the
+                    development of machine learnt potentials, in conjunction with the University of
+                    Cambridge1, for use in molecular dynamics simulations, the application of mesoscale
+                    methods to the simulation and understanding of lipid bilayer and liposome formation2
+                    and the extension of the molecular dynamics method to granular dynamics3 with an
+                    application to battery electrode structure analysis.
+                    <ol>
+                      <li>Batatia, I. et al "MACE: Higher Order Equivariant Message Passing Neural
+                        Networks for Fast and Accurate Force Fields", Advances in Neural Information
+                        Processing Systems, 11423-11436 (2023).</li>
+                      <li><a
+                          href="https://blog.3ds.com/brands/biovia/development-of-innovative-drugs-using-materials-studio/">Development
+                          of Innovative Drugs Using Materials Studio</a></li>
+                      <li>Jing Bi et al “Multiscale modeling for the science and engineering of materials”
+                        International Journal for Multiscale Computational Engineering, 19, 1-80 (2021).
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="mt-auto d-flex justify-content-between align-items-end">
+                  <div>
+                    <button class="btn btn-sm btn-outline-secondary" disabled>Slides</button>
+                    <button class="btn btn-sm btn-outline-secondary" disabled>Video</button>
+                  </div>
+                  <small class="text-muted">Time: 03:00pm</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Electricity Market Operation in Nordics – An Overview</h5>
+                <p class="card-text mb-2">
+                  <strong>Speaker:</strong> Dr. Sambeet Mishra<br>
+                  <strong>Affiliation:</strong> University of South-Eastern Norway<br>
+                  <strong>Date:</strong> January 03, 2025
+                </p>
+                <a class="btn btn-sm btn-outline-info mb-2" data-bs-toggle="collapse" href="#abstract-sambeet"
+                  role="button" aria-expanded="false" aria-controls="abstract-sambeet">
+                  Show Abstract
+                </a>
+                <div class="collapse" id="abstract-sambeet">
+                  <div class="card card-body mb-2">
+                    Electricity markets and their associated operational structures play a
+                    pivotal role
+                    in ensuring a secure, reliable, and economically efficient energy supply. By
+                    facilitating competition among diverse power producers - from conventional
+                    fossil-fuel generators to renewable energy sources - electricity markets promote
+                    transparency in pricing and stimulate innovation. Key market mechanisms, such as
+                    day-ahead auctions and intraday trading, help align generation with demand,
+                    encouraging optimal resource allocation and minimizing imbalances in real time.On an
+                    operational level, Transmission System Operators (TSOs) oversee grid reliability
+                    through balancing markets and ancillary services, ensuring electricity flows
+                    reliably across interconnected networks. These operators deploy mechanisms like
+                    reserve capacity activation and frequency control to stabilize the system whenever
+                    unexpected deviations in supply or demand occur. Furthermore, the integration of
+                    distributed energy resources and the rise of prosumers introduce new complexity and
+                    opportunities, including peer-to-peer trading and localized market initiatives.
+                    Overall, the interplay between electricity market design and operational frameworks
+                    underpins the modern power sector’s resilience, adaptability, and efficiency. By
+                    continuously refining these market structures and coordinating operations across
+                    borders and jurisdictions, stakeholders can foster a robust and sustainable energy
+                    ecosystem that meets evolving societal needs.
+                  </div>
+                </div>
+                <div class="mt-auto d-flex justify-content-between align-items-end">
+                  <div>
+                    <button class="btn btn-sm btn-outline-secondary" disabled>Slides</button>
+                    <button class="btn btn-sm btn-outline-secondary" disabled>Video</button>
+                  </div>
+                  <small class="text-muted">Time: 02:00pm</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-muted py-5">
+    <div class="container text-center">
+      <p class="mb-1">© 2025 CS KathaBarta · NISER Bhubaneswar</p>
+    </div>
+    <div class="container text-center">
+      <a href="https://www.niser.ac.in/~smishra/event/cskathabarta/archive/2024.html">2024</a> |
+      <a href="https://www.niser.ac.in/~smishra/event/cskathabarta/archive/2023.html">2023</a> |
+      <a href="https://www.niser.ac.in/~smishra/event/cskathabarta/archive/2022.html">2022</a> |
+      <a href="https://www.niser.ac.in/~smishra/event/cskathabarta/archive/2021.html">2021</a>
+    </div>
+    <div class="container text-center">
+      <a href="https://www.niser.ac.in/~smishra/index.html">Home</a>
+      <a href="https://www.niser.ac.in/~smishra/people.html">People</a>
+      <a href="https://www.niser.ac.in/~smishra/research.html">Research</a>
+      <a href="https://www.niser.ac.in/~smishra/teaching.html">Teaching</a>
+      <a href="https://www.niser.ac.in/~smishra/events.html" class="active">Events</a>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
+</html>
